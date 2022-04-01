@@ -2,7 +2,6 @@ using System;
 using System.IO;
 using System.Net;
 using System.Runtime.Serialization.Formatters.Binary;
-using StateManagers;
 using Terrain;
 using UnityEngine;
 
@@ -53,7 +52,7 @@ namespace Networking
             int _commandId = _packet.ReadInt();
             bool _isValid = _packet.ReadBool();
             
-            StateManager.instance.ValidateCommand(_commandId, _isValid);
+            // TODO: Validate modification of chunk
         }
 
         public static void ModifyChunk(Packet _packet)

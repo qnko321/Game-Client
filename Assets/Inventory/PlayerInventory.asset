@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slots:
   - id: 1
-    amount: 50
+    amount: 1
   - id: 0
     amount: 0
   - id: 0

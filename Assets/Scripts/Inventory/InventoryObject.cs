@@ -18,9 +18,6 @@ namespace Inventory
         
         public (int[], int) AddItem(int _id, int _amount, int _maxStack)
         {
-            Debug.Log(_id);
-            Debug.Log(_amount);
-            Debug.Log(_maxStack);
             List<int> _updatedSlots = new List<int>();
             for (int _i = 0; _i < slots.Length; _i++)
             {

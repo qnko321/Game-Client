@@ -7,7 +7,7 @@ namespace StateManagers
 {
     public class StateManager : MonoBehaviour
     {
-        public static StateManager instance;
+        /*public static StateManager instance;
         
         private void Awake()
         {
@@ -39,6 +39,6 @@ namespace StateManagers
                 commands[_commandId].Undo();
                 commands.Remove(_commandId);
             }
-        }
+        }*/
     }
 }

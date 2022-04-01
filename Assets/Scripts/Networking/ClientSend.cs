@@ -64,10 +64,9 @@ namespace Networking
             SendTcpData(_packet);
         }
 
-        public static void ModifyChunk(int _commandId, ChunkCoord _coord, Vector3 _voxelPos, byte _oldId, byte _newId)
+        public static void ModifyChunk(ChunkCoord _coord, Vector3 _voxelPos, byte _oldId, byte _newId)
         {
             using Packet _packet = new Packet((int) ClientPackets.ModifyChunk);
-            _packet.Write(_commandId);
             _packet.Write(_coord);
             _packet.Write(_voxelPos);
             _packet.Write(_oldId);

@@ -56,6 +56,7 @@ namespace Terrain
         {
             DebugMenu.instance.UpdateChunkCoord(_playerChunkCoord);
             LoadSpawn();
+            Debug.Log(JsonUtility.ToJson(blockTypes[0]));
         }
 
         private void Update()
@@ -302,8 +303,6 @@ namespace Terrain
         }
         
         #endregion
-
-        
     }
 
     [Serializable]

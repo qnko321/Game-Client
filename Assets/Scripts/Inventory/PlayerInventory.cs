@@ -1,6 +1,4 @@
-using System;
 using Managers;
-using TMPro.Examples;
 using UnityEngine;
 
 namespace Inventory

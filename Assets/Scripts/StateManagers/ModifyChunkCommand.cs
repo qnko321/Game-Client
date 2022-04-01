@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace StateManagers
 {
-    public class ModifyChunkCommand : ICommand
+    public class ModifyChunkCommand// : ICommand
     {
         private readonly PlayerInventory inventory;
         private readonly World world;
